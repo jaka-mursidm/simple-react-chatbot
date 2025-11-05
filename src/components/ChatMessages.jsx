@@ -1,25 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRobot, faCircleUser } from '@fortawesome/free-solid-svg-icons'
-const ChatMessage = () => {
-    const messages = [{
-        id: 1,
-        text: 'Hello chatbot!',
-        sender: 'user'
-    }, {
-        id: 2,
-        text: 'Hello! How can i help you?😀',
-        sender: 'robot'
-    }, {
-        id: 3,
-        text: 'Can you get met todays date?',
-        sender: 'user'
-    }, {
-        id: 4,
-        text: 'Today is November 05?',
-        sender: 'robot'
-    }
-    ];
-
+const ChatMessages = ({ messages }) => {
     return (
         <>
             {messages.map((message) => {
@@ -38,4 +19,4 @@ const ChatMessage = () => {
     );
 }
 
-export default ChatMessage
+export default ChatMessages
